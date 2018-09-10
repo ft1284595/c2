@@ -122,6 +122,12 @@ int main(void)
 	while(flag)	{
 		printf("please input a 4 digits:");
 		//scanf("%[^\n]", input);
+		/*
+		if(scanf("%s", input) != 1){
+			printf("input valid.\n");	
+			continue;
+		}
+		*/
 		fgets(input, sizeof(input), stdin);
 		fflush(stdin);
 		if(strlen(input) > 19){
@@ -131,6 +137,7 @@ int main(void)
 			input[strlen(input) - 1] = '\0';
 		}
 		printf("you input:%s\n", input);
+
 
 		cmpRet = strcmp(input, str);
 		if(!cmpRet){
