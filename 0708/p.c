@@ -2,14 +2,15 @@
 #include <time.h>
 #include <stdlib.h>
 
-//void init_array(int (*a)[], int l, int c)
-void init_array(int a[][10], int l, int c)
+void init_array(int (*a)[], int l, int c)
+//void init_array(int a[][10], int l, int c)
 {
 	int i, j;
 	srand(time(NULL));
 	for(i=0; i<l; i++)
 		for(j=0; j<c;j++)
-			a[i][j] = rand() % 100;
+			//a[i][j] = rand() % 100;
+			*(*(a+i) + j) = rand() % 100;
 }
 
 void show_array(int a[][10], int l, int c)
