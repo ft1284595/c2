@@ -1,2 +1,3 @@
 #ignore executeable file
 app
+*.swp
