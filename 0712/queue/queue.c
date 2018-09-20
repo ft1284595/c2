@@ -22,5 +22,5 @@ int is_empty(void)
 
 int is_full(void)
 {
-	return (r + 1)%sz == f;
+	return (f+1)%sz == r;
 }
