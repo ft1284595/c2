@@ -16,8 +16,16 @@ int main(int argc, char *argv[])
 		printf("open file err\n");
 		return -1;
 	}
+	/*
 	while(fgets(buf, sizeof(buf), src) != NULL){
 		fputs(buf, dest);
+	}
+	*/
+	char ch;
+	//while((ch = fgetc(src)) != EOF){
+	while(feof(src) == 0){
+		ch = fgetc(src);
+		fputc(ch, dest);
 	}
 
 	fclose(src);
