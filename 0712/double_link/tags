@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+_LINK_H_	./link.h	2;"	d
+free_node	./link.c	/^void free_node(link p){$/;"	f
+item	./link.h	/^	int item;$/;"	m	struct:node
+link	./link.h	/^typedef struct node *link;$/;"	t	typeref:struct:node
+link_delete	./link.c	/^void link_delete(link *head, link *tail, link p){$/;"	f
+link_destroy	./link.c	/^void link_destroy(link *head, link *tail){$/;"	f
+link_init	./link.c	/^void link_init(link *head, link *tail){ \/\/struct node **head = &实参head$/;"	f
+link_insert	./link.c	/^void link_insert(link *head, link *tail, link p){	\/\/头插法$/;"	f
+link_modify	./link.c	/^void link_modify(link p, int key){$/;"	f
+link_search	./link.c	/^link link_search(link *head, int key){$/;"	f
+link_travel_head	./link.c	/^void link_travel_head(link *head, void (*visit)(link)){$/;"	f
+link_travel_tail	./link.c	/^void link_travel_tail(link *tail, void (*visit)(link)){$/;"	f
+main	./main.c	/^int main(void)$/;"	f
+make_node	./link.c	/^link make_node(int item){$/;"	f
+next	./link.h	/^	link next;	\/\/struct node *next;$/;"	m	struct:node
+node	./link.h	/^struct node{$/;"	s
+pre	./link.h	/^	link pre;$/;"	m	struct:node
+print_item	./main.c	/^void print_item(link p)$/;"	f

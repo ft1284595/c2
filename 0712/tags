@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+destroy_stack	./stack.c	/^void destroy_stack(void){$/;"	f
+init_stack	./stack.c	/^void init_stack(int size)$/;"	f
+is_empty	./stack.c	/^int is_empty(void)$/;"	f
+is_full	./stack.c	/^int is_full(void)$/;"	f
+main	./cal.c	/^int main(void)$/;"	f
+main	./main.c	/^int main(void)$/;"	f
+pop	./stack.c	/^char pop(void)$/;"	f
+push	./stack.c	/^void push(char ch)$/;"	f
+reversed_cal	./cal.c	/^int reversed_cal(char *s)$/;"	f
+stack	./stack.c	/^static char *stack;	\/\/数据栈$/;"	v	file:
+sz	./stack.c	/^static int sz = 512;$/;"	v	file:
+top	./stack.c	/^static int top = 0;		\/\/栈指针$/;"	v	file:
